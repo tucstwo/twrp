@@ -8,7 +8,6 @@ $(call inherit-product-if-exists, vendor/motorola/scorpion_mini/scorpion_mini-ve
 DEVICE_PACKAGE_OVERLAYS += device/motorola/scorpion_mini/overlay
 
 # IDC
-#PRODUCT_COPY_FILES += $(DEVICE_FOLDER)/idc/atmxt-i2c.idc:system/usr/idc/atmxt-i2c.idc
 PRODUCT_COPY_FILES += device/motorola/scorpion_mini/idc/atmxt-i2c.idc:recovery/root/vendor/firmware/atmxt-i2c.idc
 PRODUCT_COPY_FILES += device/motorola/scorpion_mini/idc/atmxt-r2.tdat:recovery/root/vendor/firmware/atmxt-r2.tdat
 
