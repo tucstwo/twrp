@@ -1,7 +1,9 @@
 USE_CAMERA_STUB := true
 
+-include device/motorola/msm8960-common/BoardConfigCommon.mk
+
 # inherit from the proprietary version
--include vendor/motorola/vanquish/BoardConfigVendor.mk
+-include vendor/motorola/xt926/BoardConfigVendor.mk
 
 BOARD_VENDOR := motorola
 
