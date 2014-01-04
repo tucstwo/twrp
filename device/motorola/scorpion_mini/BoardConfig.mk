@@ -1,7 +1,5 @@
 USE_CAMERA_STUB := true
 
--include device/motorola/msm8960-common/BoardConfigCommon.mk
-
 # inherit from the proprietary version
 -include vendor/motorola/xt907/BoardConfigVendor.mk
 
@@ -25,8 +23,10 @@ TARGET_CPU_SMP := true
 COMMON_GLOBAL_CFLAGS += -D__ARM_USE_PLD -D__ARM_CACHE_LINE_SIZE=64
 
 # Platform
-TARGET_BOARD_PLATFORM := msm8960
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
+TARGET_BOARD_PLATFORM := msm8960
+TARGET_BOOTLOADER_BOARD_NAME := MSM8960
+TARGET_CPU_VARIANT := krait
 
 BOARD_KERNEL_CMDLINE := 
 BOARD_KERNEL_BASE           := 0x80200000
